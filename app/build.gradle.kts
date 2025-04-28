@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.mapboxtest"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.mapboxtest"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -45,4 +45,16 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.mapbox.sdk)
+    implementation("com.mapbox.maps:android:11.11.0")
+
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.scalars)
+
+    implementation(libs.gson)
+
+    implementation(libs.coroutines.android)
+
+
 }
