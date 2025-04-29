@@ -47,5 +47,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.mapbox.maps:android:11.11.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
 
 }
